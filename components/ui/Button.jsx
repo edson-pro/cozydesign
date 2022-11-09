@@ -12,7 +12,7 @@ export default function Button({
       onClick={onClick}
       className={`flex hover:bg-opacity-75 ${
         noPattern ? "" : "btn"
-      }  rounded-[10px]  text-[#e4ded5] font-Geomanist font-bold justify-center tracking-[2px] leading-5 py-[30px] px-[40px] text-center uppercase bg-[#b55730] items-center `}
+      } bg-noise rounded-[.625rem]  text-[#e4ded5] font-Geomanist font-bold justify-center tracking-[.125rem] leading-5 py-[1.875rem] px-[2.5rem] text-center uppercase bg-[#b55730] items-center `}
     >
       {children}
     </button>

@@ -9,7 +9,6 @@ export default function Footer() {
           <img
             className="w-20 h-12"
             src="https://assets.website-files.com/5b60dd35a56ec7bab0703d2d/5f8782865afd27755f3cb5bd_Cozy_logo_denim.svg"
-            alt=""
           />
           <ul className="flex md:flex-row md:mb-0 mb-7 flex-col items-center gap-5">
             {[
@@ -79,7 +78,7 @@ export default function Footer() {
               },
             ].map((e) => {
               return (
-                <a
+                <Link
                   style={{ backgroundColor: e.color }}
                   className="h-6 w-6 flex justify-center rounded-sm shadow-md items-center"
                   href="#"
@@ -87,41 +86,41 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <img className="w-3 h-3" src={e.icon} alt="" />
-                </a>
+                </Link>
               );
             })}
           </div>
         </div>
       </div>
-      <div className="w-full  max-w-6xl mx-auto my-3 h-[1.5px] bg-[#d4ac8e]" />
+      <div className="w-full  max-w-6xl mx-auto my-3 h-[.0938rem] bg-[#d4ac8e]" />
       <div className="flex lg:flex-row flex-col pt-6 justify-between items-center max-w-6xl mx-auto">
         <div className="flex  gap-6 items-center">
-          <a href="">
+          <Link href="/">
             <img
               className="w-40 h-14"
               src="https://assets.website-files.com/5b60dd35a56ec7bab0703d2d/6331fe7646cb0557541386cd_BBB%20Accredited%20Business%20Horizontal%20Seal%20-%20Vector69Com.svg"
               alt=""
             />
-          </a>{" "}
-          <a href="">
+          </Link>{" "}
+          <Link href="/">
             <img
               className="w-40 h-auto"
               src="https://assets.website-files.com/5b60dd35a56ec7bab0703d2d/634dd43d0cf9ec7420324d59_bod-new_shield-logo-member-p-500.png"
               alt=""
             />
-          </a>{" "}
+          </Link>{" "}
         </div>
         <div className="flex lg:flex-row flex-col my-5 lg:my-0 gap-5 items-center">
           <p className="text-xs text-[#223240]">
             Made with ❤️ love in beautiful, sunny San Diego. ©2021
           </p>
           <div className="flex items-center gap-5 text-xs">
-            <a className="text-[#b55730] capitalize " href="">
+            <Link href="/privacy" className="text-[#b55730] capitalize ">
               privacy
-            </a>
-            <a className="text-[#b55730] capitalize " href="">
+            </Link>
+            <Link className="text-[#b55730] capitalize " href="/">
               photo credit
-            </a>
+            </Link>
           </div>
         </div>
       </div>
